@@ -1,5 +1,4 @@
 SAVE OUTFILE="C:\PYTHON\BaCE\CLEAN UK.sav"  /DROP=
-    Duration
     h_minprogresserror
     respid_screener
     pass

@@ -97,7 +97,7 @@ for SPSSFile in SPSSFiles :
 	# Création des fichiers de stockage des variables vides trouvées
 	Fichier_Vides = open(SPSSFile[:len(SPSSFile)] + '.Vides', 'w')
 	Fichier_Syntaxe = open(SPSSFile[:len(SPSSFile)] + '.SPS', 'w')
-	Fichier_Syntaxe.write('SAVE OUTFILE="' + os.getcwd() + '\\CLEAN ' + SPSSFile + '"  /DROP=\n')
+	Fichier_Syntaxe.write('SAVE OUTFILE="' + os.getcwd() + '\\CLEAN ' + SPSSFile + '.sav"  /DROP=\n')
 	inc = 0
 	var_vides = 0
 	for var in variables_vides :
